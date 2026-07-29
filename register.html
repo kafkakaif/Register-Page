@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Register</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    #skill{
+        height: 700px;
+        width: 100%;
+        background-image:url('img/4820992.webp');
+        background-position:center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    table{
+        text-align: center;
+       left: 35%;
+        top: 240px;
+        position: relative;
+        line-height: 10px;
+        text-transform: capitalize;
+        font-size: 25px;
+        line-height: 30px;
+    }
+    input[type="submit"]{
+            text-align: center;
+            font-size: 20px;
+            background-color:dimgrey;
+            text-transform: capitalize;
+            top: 10px;
+            left:170px;
+            position: relative;
+    }
+#Chennai,#Madanapalle,#Kadiri,#Kurabalakota{
+    display: none;
+}
+</style>
+<body>
+    <div id="skill">
+        <form action="">
+            <table>
+                <tr>
+                    <td>name</td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td>age</td>
+                    <td><input type="number"></td>
+                </tr>
+                <tr>
+                    <td>email</td>
+                    <td><input type="email"></td>
+                </tr>
+                <tr>
+                    <td>mobile number</td>
+                    <td><input type="number"></td>
+                </tr>
+                <tr> 
+                    <td>branch</td>
+                    <td><select name="branch" id="branch" onchange="toggle()">
+                    <option value="--SELECT BRANCH--">--SELECT BRANCH--</option>
+                    <option value="Chennai">Chennai</option>
+                    <option value="Madanapalle">Madanapalle</option>
+                    <option value="Kadiri">Kadiri</option>
+                    <option value="Kurabalakota">Kurabalakota</option>
+                    </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Domain</td>
+                    <td>
+                        <select name="Chennai" id="Chennai">
+                            <option value="--SELECT--">--SELECT--</option>
+                            <option value="Porsche-911">Porsche-911</option>
+                            <option value="Porsche-711">Porsche-711</option>
+                            <option value="Macan">Macan</option>
+                        </select>
+                   
+
+                  
+                        <select name="Madanapalle" id="Madanapalle">
+                            <option value="--SELECT--">--SELECT--</option>
+                            <option value="Taycan">Taycan</option>
+                            <option value="Panamera">Panamera</option>
+                            <option value="Cayman">Cayman</option>
+                        </select>
+                  
+
+                  
+                        <select name="Kadiri" id="Kadiri">
+                            <option value="--SELECT--">--SELECT--</option>
+                            <option value="Taycan 4S">Taycan 4S</option>
+                            <option value="Macan Electric">Macan Electric</option>
+                            <option value="Cayenne Coupe">Cayenne Coupe</option>
+                        </select>
+              
+
+                
+                        <select name="Kurabalakota" id="Kurabalakota">
+                            <option value="--SELECT--">--SELECT--</option>
+                            <option value="Cayenne">Cayenne</option>
+                            <option value="Carrera 4 GTS">Carrera 4 GTS</option>
+                            <option value="911 Turbo">911 Turbo</option>
+                        </select>
+                    </td>
+                </tr>
+                    <tr>
+                        <td>
+                            <input type="submit" value="submit">
+                        </td>
+                    </tr>
+                
+            </table>
+        </form>
+    </div>
+    <script>
+        function toggle(){
+            const branch=document.getElementById('branch').value;
+            const Chennai=document.getElementById('Chennai');
+            const Madanapalle=document.getElementById('Madanapalle');
+            const Kadiri=document.getElementById('Kadiri');
+            const Kurabalakota=document.getElementById('Kurabalakota');
+        
+        if(branch ==='Chennai'){
+            Chennai.style.display="block";
+            Madanapalle.style.display="none";
+            Kadiri.style.display="none";
+            Kurabalakota.style.display="none";   
+        }
+        else if(branch ==='Madanapalle'){
+            Chennai.style.display="none";
+            Madanapalle.style.display="block";
+            Kadiri.style.display="none";
+            Kurabalakota.style.display="none";
+        }
+        else if(branch ==='Kadiri'){
+            Chennai.style.display="none";
+            Madanapalle.style.display="none";
+            Kadiri.style.display="block";
+            Kurabalakota.style.display="none";
+        }
+        else if(branch ==='Kurabalakota'){
+            Chennai.style.display="none";
+            Madanapalle.style.display="none";
+            Kadiri.style.display="none";
+            Kurabalakota.style.display="block";
+        }
+        }
+    </script>
+</body>
+</html>
