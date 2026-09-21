@@ -55,7 +55,7 @@ No frameworks, no dependencies — just clean, functional front-end code.
 
 1. Clone the repository
    ```bash
-   git clone https://github.com/your-username/your-repo-name.git
+   git clone https://github.com/kafkakaif/Register-Page.git
    ```
 2. Ensure the `img/` folder sits alongside `register.html`
 3. Open `register.html` directly in your browser
